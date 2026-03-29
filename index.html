@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mario Bros - Encanadores</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/icon.png" alt="Ícone mario">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Serviços</a>
+            <a href="#">Fale conosco</a>
+        </nav>
+    </header>
+
+    <main class="caixa-mae">
+        <div class="principal">
+            <img src="./assets/logo.png" alt="Logo do jogo" class="logo">
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo</p>
+            <p>Você já se encontrou em uma situação de emergência com encanamentos? Com vazamentos inesperados, canos entupidos ou torneiras que não param de pingar? Não se preocupe, estamos aqui para salvar o dia!</p>
+            <button class="contact-button" onclick="mostrarForm()">Entre em contato</button>
+        </div>
+        <img src="./assets/mario.png" alt="Mario e luigi" class="logo-mario">
+    </main>
+
+    <div class="caixa-video">
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <a href="#" class="whats">
+        <img src="./assets/whats.png" alt="WhatsApp">
+    </a>
+
+    <form class="formulario-fale-conosco">
+        <span class="fechar-form" onclick="esconderForm()">X</span>
+        <input type="text" placeholder="Nome completo" required>
+        <input type="tel" placeholder="Telefone/Celular" required>
+        <input type="email" placeholder="E-mail" required>
+        <textarea placeholder="Explique sua situação em detalhes…" rows="4"></textarea>
+        <button type="submit" class="botao-orcamento">Pedir Orçamento</button>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
